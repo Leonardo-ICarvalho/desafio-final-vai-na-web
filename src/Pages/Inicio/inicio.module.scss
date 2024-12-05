@@ -1,0 +1,116 @@
+
+
+.banner{
+    background-image: url('../../assets/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 81vh;
+    display: flex;
+    align-items: center;
+    h2{
+        color: white;
+        width: 25vw;
+        font-size: 40px;
+        margin-left: 150px;
+    }
+}
+
+.devoDoar{
+    
+    height: 85vh;
+    div{
+        
+        height: 17vh;
+        display: flex;
+        align-items: center;
+        h2{
+            font-size: 30px;
+            color: #005695;
+            margin-left: 60px;
+        }
+    }
+}
+
+.boxCard{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60vh;
+    article{
+        
+        width: 20%;
+        height: 80%;
+        background-color: #0157944D;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        p {
+            text-align: center;
+            font-size: 1.2vw;
+        }
+    }
+}
+
+@media (max-width: 780px){
+    .banner{ 
+        justify-content: center;
+        h2{
+            
+            width: 80%;
+            margin-left: 0;
+            text-align: center;
+        }
+     }
+    .devoDoar{
+        
+        height: 120vh;
+        div{
+            
+            justify-content: center;
+            margin-left: 0;
+        }
+    }
+    .boxCard{
+    
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+        article{
+            width: 230px;
+            height: 35vh;
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media(max-width: 1000px){
+    .boxCard{
+        article{
+            p{
+                font-size: 1.8vw;
+            }
+        }
+    }
+}
+
+@media(max-width: 487px){
+    .devoDoar{
+        height: 175vh;
+    }
+}
+
+@media(max-width:479px){
+    .boxCard{
+        article{
+            p{
+                font-size: 15px;
+            }
+        }
+    }
+}
